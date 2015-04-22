@@ -6,5 +6,8 @@
     <string name="app_id">388690338005697</string>
     <string name="title_activity_splash">splash</string>
     <string name="title_activity_login">Login</string>
+    <string name="how_it_works">Swipe Left or Right</string>
+    <string name="how_it_works2">To see next recipe</string>
+    <string name="how_it_works3">NEXT</string>
     <string name="title_activity_how_it_works1">How_it_works1</string>
 </resources>
