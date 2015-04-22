@@ -11,6 +11,9 @@
     <string name="how_it_works3">NEXT</string>
     <string name="how_it_works4">Mpishi helps you contribute and share recipes with other Mpishi users</string>
     <string name="how_it_works5">OK GOT IT</string>
+    <string name="btn1">Submit</string>
+    <string name="btn2">Latest Recipes</string>
+    <string name="btn3">Browse</string>
     <string name="title_activity_how_it_works1">How_it_works1</string>
     <string name="title_activity_how_it_works2">How_it_works2</string>
 </resources>

@@ -79,8 +79,6 @@ public class Login extends ActionBarActivity {
 //                    Intent intent = new Intent(getActivity(), How_it_works1.class);
 //                    startActivity(intent);
 //                }
-                //Intent intent = new Intent(getActivity(), How_it_works1.class);
-//                    startActivity(intent);
                 startActivity(new Intent(getActivity(), How_it_works1.class));
             }
 
