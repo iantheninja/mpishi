@@ -1,9 +1,12 @@
 package ian.theninja.mpishi;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
 
 
 public class How_it_works1 extends ActionBarActivity {
@@ -12,6 +15,15 @@ public class How_it_works1 extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_how_it_works1);
+
+        ImageButton imageButton = (ImageButton) findViewById(R.id.imageButton);
+        imageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getBaseContext(), How_it_works2.class);
+                startActivity(intent);
+            }
+        });
     }
 
 

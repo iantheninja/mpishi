@@ -35,6 +35,10 @@
             android:name=".How_it_works1"
             android:label="@string/title_activity_how_it_works1" >
         </activity>
+        <activity
+            android:name=".How_it_works2"
+            android:label="@string/title_activity_how_it_works2" >
+        </activity>
     </application>
 
 </manifest>
