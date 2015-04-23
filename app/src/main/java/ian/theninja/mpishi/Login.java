@@ -77,15 +77,11 @@ public class Login extends ActionBarActivity {
                 Log.d("IAN", "onSuccess");
 
                 if (profile != null){
-//                    mTextDetails.setText("Welcome "+profile.getName());
                     Log.d("IAN", "onSuccess2");
                     Intent intent = new Intent(getActivity(), How_it_works1.class);
                     startActivity(intent);
                 }
-// else{
-//                    Log.d("IAN", "onSuccess3");
-//                }
-                //startActivity(new Intent(getActivity(), How_it_works1.class));
+
             }
 
             @Override
