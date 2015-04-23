@@ -7,7 +7,7 @@
     tools:context="ian.theninja.mpishi.Login$PlaceholderFragment">
 
     <TextView
-        android:text="@string/hello_world"
+        android:text=""
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textview"/>

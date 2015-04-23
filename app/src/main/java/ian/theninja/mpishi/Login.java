@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
@@ -65,7 +66,7 @@ public class Login extends ActionBarActivity {
      */
     public static class PlaceholderFragment extends Fragment {
 
-        private TextView mTextDetails;
+
 
         private CallbackManager mcCallbackManager;
         private FacebookCallback<LoginResult>mCallback = new FacebookCallback<LoginResult>() {
@@ -73,23 +74,28 @@ public class Login extends ActionBarActivity {
             public void onSuccess(LoginResult loginResult) {
                 AccessToken accessToken = loginResult.getAccessToken();
                 Profile profile = Profile.getCurrentProfile();
+                Log.d("IAN", "onSuccess");
 
-//                if (profile != null){
-//                    //mTextDetails.setText("Welcome "+profile.getName());
-//                    Intent intent = new Intent(getActivity(), How_it_works1.class);
-//                    startActivity(intent);
+                if (profile != null){
+//                    mTextDetails.setText("Welcome "+profile.getName());
+                    Log.d("IAN", "onSuccess2");
+                    Intent intent = new Intent(getActivity(), How_it_works1.class);
+                    startActivity(intent);
+                }
+// else{
+//                    Log.d("IAN", "onSuccess3");
 //                }
-                startActivity(new Intent(getActivity(), How_it_works1.class));
+                //startActivity(new Intent(getActivity(), How_it_works1.class));
             }
 
             @Override
             public void onCancel() {
-
+                Log.d("IAN", "onCancel");
             }
 
             @Override
             public void onError(FacebookException e) {
-
+                Log.d("IAN", "onError " + e);
             }
         };
 
