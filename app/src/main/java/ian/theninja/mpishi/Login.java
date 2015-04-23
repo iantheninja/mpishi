@@ -74,10 +74,10 @@ public class Login extends ActionBarActivity {
             public void onSuccess(LoginResult loginResult) {
                 AccessToken accessToken = loginResult.getAccessToken();
                 Profile profile = Profile.getCurrentProfile();
-                Log.d("IAN", "onSuccess");
+                //Log.d("IAN", "onSuccess");
 
                 if (profile != null){
-                    Log.d("IAN", "onSuccess2");
+                    //Log.d("IAN", "onSuccess2");
                     Intent intent = new Intent(getActivity(), How_it_works1.class);
                     startActivity(intent);
                 }
@@ -86,12 +86,13 @@ public class Login extends ActionBarActivity {
 
             @Override
             public void onCancel() {
-                Log.d("IAN", "onCancel");
+
+                //Log.d("IAN", "onCancel");
             }
 
             @Override
             public void onError(FacebookException e) {
-                Log.d("IAN", "onError " + e);
+                //Log.d("IAN", "onError " + e);
             }
         };
 
